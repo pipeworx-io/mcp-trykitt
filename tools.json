@@ -1,0 +1,31 @@
+[
+  {
+    "name": "trykitt_find_email",
+    "description": "Find a verified work email by full name + company domain (or website URL — TryKitt extracts the domain), via TryKitt.ai. Example: trykitt_find_email({ full_name: \"Patrick Collison\", domain: \"stripe.com\", _apiKey: \"your-trykitt-key\" })",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "full_name": {
+          "type": "string",
+          "description": "Full name as it appears on LinkedIn or similar, e.g. \"Patrick Collison\"."
+        },
+        "domain": {
+          "type": "string",
+          "description": "Company domain or website, e.g. \"stripe.com\" or \"https://stripe.com\"."
+        },
+        "linkedin_url": {
+          "type": "string",
+          "description": "Optional LinkedIn profile URL to disambiguate the person."
+        },
+        "_apiKey": {
+          "type": "string",
+          "description": "Your TryKitt API key (get one at trykitt.ai)."
+        }
+      },
+      "required": [
+        "full_name",
+        "domain"
+      ]
+    }
+  }
+]

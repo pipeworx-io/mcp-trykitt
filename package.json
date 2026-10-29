@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-trykitt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TryKitt MCP — wraps the TryKitt.ai B2B email finder API (trykitt.ai)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-trykitt": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "trykitt"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-trykitt.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/trykitt",
   "pipeworx": {
-    "sourceHash": "v1-464ad23d55dadf3cdafdc6c57dd72ca334d31634572f7556e47241ba33338578",
-    "sourceCommit": "3d8d9f09e39ebb175a9e41fffd8601eeddcf10a4"
+    "mode": "gateway",
+    "slug": "trykitt",
+    "gatewaySlug": "trykitt",
+    "sourceHash": "v1-e0ff468f7ca5390d066ba4fe64e419e784466c055c610dbb49371adb436c23da",
+    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
   }
 }

@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/trykitt",
   "title": "Trykitt",
   "description": "TryKitt MCP — wraps the TryKitt.ai B2B email finder API (trykitt.ai)",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://pipeworx.io/packs/trykitt",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-trykitt",
