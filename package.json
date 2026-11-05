@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-trykitt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TryKitt MCP — wraps the TryKitt.ai B2B email finder API (trykitt.ai)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "trykitt",
     "gatewaySlug": "trykitt",
-    "sourceHash": "v1-e0ff468f7ca5390d066ba4fe64e419e784466c055c610dbb49371adb436c23da",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-7372b2d829d721a0d5ff8e7ee655b474aa82396a445b4da4600366c8465f78d7",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
